@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BraveHer - Women's Travel Platform</title>
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components/loader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1200x800/?travel,women') no-repeat center center/cover;
+        }
+        .featured-destination {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+        .destination-card img, .feature-card img, .blog-post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading animation -->
+    <div class="loader-container">
+        <div class="loader"></div>
+        <div class="loader-text">Loading amazing content...</div>
+    </div>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo"><i class="fas fa-compass"></i> BraveHer</div>
+            <ul class="nav-menu">
+                <li><a href="custom-travel.html"><i class="fas fa-map-marked-alt"></i> Custom Travel</a></li>
+                <li><a href="safety.html"><i class="fas fa-shield-alt"></i> Safety Services</a></li>
+                <li><a href="travel-buddy.html"><i class="fas fa-user-friends"></i> Travel Buddy</a></li>
+                <li><a href="local-guide.html"><i class="fas fa-map"></i> Local Guide</a></li>
+                <li><a href="community.html"><i class="fas fa-comments"></i> Community</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Travel Experience Designed for Independent Women</h1>
+                <p>Safe, comfortable, and personalized travel services that empower every journey</p>
+                <a href="#custom-travel" class="cta-button">Start Your Journey <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class="fas fa-globe-americas"></i>
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Destinations</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span class="stat-number">10k+</span>
+                    <span class="stat-label">Happy Travelers</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-female"></i>
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Local Guides</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="custom-travel" class="section">
+            <h2><i class="fas fa-suitcase"></i> Custom Travel Services</h2>
+            <div class="travel-filter">
+                <div class="filter-group">
+                    <label>Destination</label>
+                    <select class="filter-select">
+                        <option>Asia</option>
+                        <option>Europe</option>
+                        <option>Americas</option>
+                        <option>Africa</option>
+                        <option>Oceania</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Duration</label>
+                    <select class="filter-select">
+                        <option>1-3 Days</option>
+                        <option>4-7 Days</option>
+                        <option>8-14 Days</option>
+                        <option>15+ Days</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Budget</label>
+                    <select class="filter-select">
+                        <option>Budget</option>
+                        <option>Standard</option>
+                        <option>Premium</option>
+                        <option>Luxury</option>
+                    </select>
+                </div>
+            </div>
+            <div class="travel-types">
+                <div class="travel-card">
+                    <div class="travel-card-header">
+                        <i class="fas fa-mountain"></i>
+                        <span class="travel-tag">Most Popular</span>
+                    </div>
+                    <h3>Adventure Journey</h3>
+                    <p>Challenge yourself with extraordinary experiences in nature</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Professional female guides</li>
+                        <li><i class="fas fa-check"></i> Safety equipment included</li>
+                        <li><i class="fas fa-check"></i> 24/7 emergency support</li>
+                        <li><i class="fas fa-check"></i> Small group size (max 8)</li>
+                    </ul>
+                    <div class="price-tag">
+                        <span class="price">From $899</span>
+                        <span class="duration">/ 5 days</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="card-button">Learn More</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="travel-card">
+                    <div class="travel-card-header">
+                        <i class="fas fa-landmark"></i>
+                        <span class="travel-tag">Best Value</span>
+                    </div>
+                    <h3>Cultural Experience</h3>
+                    <p>Immerse yourself in local traditions and customs</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Local workshops & classes</li>
+                        <li><i class="fas fa-check"></i> Cultural events access</li>
+                        <li><i class="fas fa-check"></i> Language assistance</li>
+                        <li><i class="fas fa-check"></i> Authentic local stays</li>
+                    </ul>
+                    <div class="price-tag">
+                        <span class="price">From $699</span>
+                        <span class="duration">/ 4 days</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="card-button">Learn More</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="travel-card">
+                    <div class="travel-card-header">
+                        <i class="fas fa-umbrella-beach"></i>
+                        <span class="travel-tag">Luxury</span>
+                    </div>
+                    <h3>Relaxation Retreat</h3>
+                    <p>Unwind and rejuvenate in carefully selected locations</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Premium spa services</li>
+                        <li><i class="fas fa-check"></i> Wellness activities</li>
+                        <li><i class="fas fa-check"></i> Meditation sessions</li>
+                        <li><i class="fas fa-check"></i> Gourmet dining</li>
+                    </ul>
+                    <div class="price-tag">
+                        <span class="price">From $1299</span>
+                        <span class="duration">/ 7 days</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="#" class="card-button">Learn More</a>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-travel-cta">
+                <h3>Can't find what you're looking for?</h3>
+                <p>Let us create a personalized itinerary just for you</p>
+                <button class="custom-plan-btn">Create Custom Plan <i class="fas fa-magic"></i></button>
+            </div>
+        </section>
+
+        <section id="safety" class="section">
+            <h2><i class="fas fa-shield-alt"></i> Safety Services</h2>
+            <div class="safety-intro">
+                <p>Your safety is our top priority. We provide comprehensive security features designed specifically for women travelers.</p>
+            </div>
+            <div class="safety-features">
+                <div class="feature">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>24/7 Emergency Support</h3>
+                    <p>Round-the-clock assistance from our dedicated team of security experts</p>
+                    <ul class="safety-list">
+                        <li><i class="fas fa-check-circle"></i> Instant emergency response</li>
+                        <li><i class="fas fa-check-circle"></i> Multi-language support</li>
+                        <li><i class="fas fa-check-circle"></i> Medical assistance coordination</li>
+                    </ul>
+                    <div class="safety-actions">
+                        <a href="#" class="feature-link">View Details</a>
+                        <button class="emergency-btn"><i class="fas fa-exclamation-circle"></i> Emergency Contact</button>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-location-arrow"></i>
+                    <h3>Real-time Location Sharing</h3>
+                    <p>Share your journey with trusted contacts for added security</p>
+                    <ul class="safety-list">
+                        <li><i class="fas fa-check-circle"></i> Live location tracking</li>
+                        <li><i class="fas fa-check-circle"></i> Customizable sharing options</li>
+                        <li><i class="fas fa-check-circle"></i> Automated check-ins</li>
+                    </ul>
+                    <div class="safety-actions">
+                        <a href="#" class="feature-link">View Details</a>
+                        <button class="share-location-btn"><i class="fas fa-share-alt"></i> Share Location</button>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-bell"></i>
+                    <h3>Safety Alerts</h3>
+                    <p>Receive instant updates about destination safety and travel advisories</p>
+                    <ul class="safety-list">
+                        <li><i class="fas fa-check-circle"></i> Real-time safety notifications</li>
+                        <li><i class="fas fa-check-circle"></i> Local area updates</li>
+                        <li><i class="fas fa-check-circle"></i> Weather alerts</li>
+                    </ul>
+                    <div class="safety-actions">
+                        <a href="#" class="feature-link">View Details</a>
+                        <button class="alerts-btn"><i class="fas fa-bell"></i> Set Alerts</button>
+                    </div>
+                </div>
+            </div>
+            <div class="safety-resources">
+                <h3>Additional Safety Resources</h3>
+                <div class="resources-grid">
+                    <div class="resource-item">
+                        <i class="fas fa-book"></i>
+                        <h4>Safety Guidelines</h4>
+                        <p>Comprehensive travel safety tips and best practices</p>
+                    </div>
+                    <div class="resource-item">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h4>Safe Areas Guide</h4>
+                        <p>Detailed information about safe neighborhoods and areas</p>
+                    </div>
+                    <div class="resource-item">
+                        <i class="fas fa-hands-helping"></i>
+                        <h4>Local Support Network</h4>
+                        <p>Connect with local women's support groups</p>
+                    </div>
+                    <div class="resource-item">
+                        <i class="fas fa-first-aid"></i>
+                        <h4>Emergency Services</h4>
+                        <p>Quick access to local emergency contacts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="travel-buddy" class="section">
+            <h2><i class="fas fa-users"></i> Find Travel Buddies</h2>
+            <div class="buddy-search">
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label>Destination</label>
+                        <select class="filter-select">
+                            <option>All Destinations</option>
+                            <option>Asia</option>
+                            <option>Europe</option>
+                            <option>Americas</option>
+                            <option>Africa</option>
+                            <option>Oceania</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Travel Style</label>
+                        <select class="filter-select">
+                            <option>All Styles</option>
+                            <option>Adventure</option>
+                            <option>Culture</option>
+                            <option>Food & Cuisine</option>
+                            <option>Photography</option>
+                            <option>Relaxation</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Travel Date</label>
+                        <select class="filter-select">
+                            <option>Anytime</option>
+                            <option>Next Month</option>
+                            <option>Next 3 Months</option>
+                            <option>Next 6 Months</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="search-btn"><i class="fas fa-search"></i> Find Buddies</button>
+            </div>
+            <div class="buddy-list">
+                <div class="buddy-card">
+                    <div class="buddy-status online"></div>
+                    <div class="buddy-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Emma</h3>
+                    <p class="buddy-tag">Photography Enthusiast</p>
+                    <div class="buddy-details">
+                        <span><i class="fas fa-map-marker-alt"></i> From: London, UK</span>
+                        <span><i class="fas fa-calendar-alt"></i> Travel Date: May 2024</span>
+                    </div>
+                    <p class="buddy-description">Planning a photography tour in Japan, focusing on cultural sites and street photography</p>
+                    <div class="buddy-interests">
+                        <span>Photography</span>
+                        <span>Culture</span>
+                        <span>Food</span>
+                    </div>
+                    <div class="buddy-verification">
+                        <span><i class="fas fa-check-circle"></i> Verified</span>
+                        <span><i class="fas fa-star"></i> 4.9</span>
+                    </div>
+                    <div class="buddy-actions">
+                        <button class="connect-btn">Connect</button>
+                        <button class="message-btn"><i class="fas fa-comment"></i></button>
+                        <button class="save-btn"><i class="far fa-bookmark"></i></button>
+                    </div>
+                </div>
+                <div class="buddy-card">
+                    <div class="buddy-status offline"></div>
+                    <div class="buddy-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Sarah</h3>
+                    <p class="buddy-tag">Adventure Seeker</p>
+                    <div class="buddy-details">
+                        <span><i class="fas fa-map-marker-alt"></i> From: Toronto, Canada</span>
+                        <span><i class="fas fa-calendar-alt"></i> Travel Date: June 2024</span>
+                    </div>
+                    <p class="buddy-description">Looking for backpacking partners in Europe. Planning to visit 5 countries in 3 weeks.</p>
+                    <div class="buddy-interests">
+                        <span>Hiking</span>
+                        <span>Backpacking</span>
+                        <span>History</span>
+                    </div>
+                    <div class="buddy-verification">
+                        <span><i class="fas fa-check-circle"></i> Verified</span>
+                        <span><i class="fas fa-star"></i> 4.7</span>
+                    </div>
+                    <div class="buddy-actions">
+                        <button class="connect-btn">Connect</button>
+                        <button class="message-btn"><i class="fas fa-comment"></i></button>
+                        <button class="save-btn"><i class="far fa-bookmark"></i></button>
+                    </div>
+                </div>
+                <div class="buddy-card">
+                    <div class="buddy-status online"></div>
+                    <div class="buddy-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h3>Lucy</h3>
+                    <p class="buddy-tag">Foodie Explorer</p>
+                    <div class="buddy-details">
+                        <span><i class="fas fa-map-marker-alt"></i> From: Melbourne, Australia</span>
+                        <span><i class="fas fa-calendar-alt"></i> Travel Date: July 2024</span>
+                    </div>
+                    <p class="buddy-description">Seeking companions for Southeast Asian food tour. Planning to explore local markets and cooking classes.</p>
+                    <div class="buddy-interests">
+                        <span>Food</span>
+                        <span>Markets</span>
+                        <span>Culture</span>
+                    </div>
+                    <div class="buddy-verification">
+                        <span><i class="fas fa-check-circle"></i> Verified</span>
+                        <span><i class="fas fa-star"></i> 4.8</span>
+                    </div>
+                    <div class="buddy-actions">
+                        <button class="connect-btn">Connect</button>
+                        <button class="message-btn"><i class="fas fa-comment"></i></button>
+                        <button class="save-btn"><i class="far fa-bookmark"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="buddy-cta">
+                <h3>Not finding your perfect travel buddy?</h3>
+                <p>Create your own travel buddy listing and let others find you!</p>
+                <button class="create-listing-btn">Create Listing <i class="fas fa-plus"></i></button>
+            </div>
+        </section>
+
+        <section id="local-guide" class="section">
+            <h2><i class="fas fa-female"></i> Local Female Guides</h2>
+            <div class="guide-search">
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label>Location</label>
+                        <select class="filter-select">
+                            <option>All Locations</option>
+                            <option>Paris, France</option>
+                            <option>Tokyo, Japan</option>
+                            <option>New York, USA</option>
+                            <option>London, UK</option>
+                            <option>Rome, Italy</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Specialty</label>
+                        <select class="filter-select">
+                            <option>All Specialties</option>
+                            <option>Art & Museums</option>
+                            <option>Food & Cuisine</option>
+                            <option>History & Culture</option>
+                            <option>Photography</option>
+                            <option>Shopping</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Language</label>
+                        <select class="filter-select">
+                            <option>Any Language</option>
+                            <option>English</option>
+                            <option>French</option>
+                            <option>Japanese</option>
+                            <option>Spanish</option>
+                            <option>Mandarin</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="guides-grid">
+                <div class="guide-profile">
+                    <div class="guide-info">
+                        <div class="guide-header">
+                            <div class="guide-avatar">
+                                <i class="fas fa-user-circle"></i>
+                                <div class="guide-status online"></div>
+                            </div>
+                            <div>
+                                <h3>Lisa Anderson</h3>
+                                <p class="guide-location"><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                                <p class="guide-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span>(120+ reviews)</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="guide-stats">
+                            <div class="stat">
+                                <span class="stat-value">5+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">500+</span>
+                                <span class="stat-label">Tours</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">6</span>
+                                <span class="stat-label">Languages</span>
+                            </div>
+                        </div>
+                        <p class="guide-bio">Living in Paris for 5 years, specialized in art, culture, and hidden gems. Certified art historian and licensed tour guide.</p>
+                        <div class="guide-specialties">
+                            <span><i class="fas fa-palette"></i> Art Tours</span>
+                            <span><i class="fas fa-utensils"></i> Food Tours</span>
+                            <span><i class="fas fa-camera"></i> Photography Spots</span>
+                            <span><i class="fas fa-glass-cheers"></i> Nightlife</span>
+                        </div>
+                        <div class="guide-languages">
+                            <h4>Languages:</h4>
+                            <div class="language-tags">
+                                <span>English</span>
+                                <span>French</span>
+                                <span>Spanish</span>
+                            </div>
+                        </div>
+                        <div class="guide-tours">
+                            <h4>Popular Tours:</h4>
+                            <div class="tour-list">
+                                <div class="tour-item">
+                                    <span class="tour-name">Hidden Gems of Paris</span>
+                                    <span class="tour-duration">4 hours</span>
+                                    <span class="tour-price">€80</span>
+                                </div>
+                                <div class="tour-item">
+                                    <span class="tour-name">Art Museum Tour</span>
+                                    <span class="tour-duration">3 hours</span>
+                                    <span class="tour-price">€60</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="guide-actions">
+                            <button class="book-btn">Book Guide <i class="fas fa-calendar-alt"></i></button>
+                            <button class="message-guide-btn"><i class="fas fa-comment"></i> Message</button>
+                            <button class="save-guide-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more guide profiles here -->
+            </div>
+            <div class="guide-cta">
+                <h3>Are you a female guide?</h3>
+                <p>Join our community and share your local expertise with travelers from around the world</p>
+                <button class="become-guide-btn">Become a Guide <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section id="community" class="section">
+            <h2><i class="fas fa-comments"></i> Traveler Community</h2>
+            <div class="community-header">
+                <div class="community-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span class="stat-number">15k+</span>
+                        <span class="stat-label">Members</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-book-open"></i>
+                        <span class="stat-number">5k+</span>
+                        <span class="stat-label">Stories</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                </div>
+                <div class="community-actions">
+                    <button class="share-story-btn"><i class="fas fa-pen"></i> Share Your Story</button>
+                    <div class="post-filters">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">Stories</button>
+                        <button class="filter-btn">Tips</button>
+                        <button class="filter-btn">Questions</button>
+                    </div>
+                </div>
+            </div>
+            <div class="community-posts">
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-author-info">
+                            <i class="fas fa-user-circle"></i>
+                            <div class="author-details">
+                                <h3>Iceland Solo Adventure</h3>
+                                <div class="author-meta">
+                                    <p class="post-author">By Jennifer</p>
+                                    <span class="post-date">2 days ago</span>
+                                    <span class="post-category">Story</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="post-menu-btn"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                    <div class="post-images">
+                        <img src="https://source.unsplash.com/random/800x400/?iceland" alt="Iceland landscape">
+                    </div>
+                    <p class="post-excerpt">My unforgettable journey chasing the Northern Lights across Iceland's stunning landscapes. From geothermal springs to glacial hikes, every moment was magical...</p>
+                    <div class="post-tags">
+                        <span>#SoloTravel</span>
+                        <span>#Iceland</span>
+                        <span>#NorthernLights</span>
+                    </div>
+                    <div class="post-stats">
+                        <button class="stat-btn">
+                            <i class="fas fa-heart"></i>
+                            <span>234</span>
+                        </button>
+                        <button class="stat-btn">
+                            <i class="fas fa-comment"></i>
+                            <span>45</span>
+                        </button>
+                        <button class="stat-btn">
+                            <i class="fas fa-share"></i>
+                            <span>12</span>
+                        </button>
+                        <button class="stat-btn">
+                            <i class="fas fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="post-actions">
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-author-info">
+                            <i class="fas fa-user-circle"></i>
+                            <div class="author-details">
+                                <h3>Tokyo Travel Guide</h3>
+                                <div class="author-meta">
+                                    <p class="post-author">By Michelle</p>
+                                    <span class="post-date">5 days ago</span>
+                                    <span class="post-category">Guide</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="post-menu-btn"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                    <div class="post-images">
+                        <img src="https://source.unsplash.com/random/800x400/?tokyo" alt="Tokyo cityscape">
+                    </div>
+                    <p class="post-excerpt">Essential tips for exploring Tokyo solo. From navigating the metro to finding the best local spots, here's everything you need to know...</p>
+                    <div class="post-tags">
+                        <span>#Tokyo</span>
+                        <span>#JapanTravel</span>
+                        <span>#TravelTips</span>
+                    </div>
+                    <div class="post-stats">
+                        <button class="stat-btn">
+                            <i class="fas fa-heart"></i>
+                            <span>189</span>
+                        </button>
+                        <button class="stat-btn">
+                            <i class="fas fa-comment"></i>
+                            <span>32</span>
+                        </button>
+                        <button class="stat-btn">
+                            <i class="fas fa-share"></i>
+                            <span>8</span>
+                        </button>
+                        <button class="stat-btn">
+                            <i class="fas fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="post-actions">
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="community-cta">
+                <h3>Join Our Community</h3>
+                <p>Connect with fellow travelers, share your experiences, and get inspired for your next adventure</p>
+                <button class="join-community-btn">Join Now <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-compass"></i> BraveHer</h4>
+                <p>Empowering women to explore the world safely and confidently</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#custom-travel">Custom Travel</a></li>
+                    <li><a href="#safety">Safety Services</a></li>
+                    <li><a href="#travel-buddy">Find Buddies</a></li>
+                    <li><a href="#local-guide">Local Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BraveHer - Making Travel Better for Women</p>
+        </div>
+    </footer>
+
+    <script>
+        // 加载动画
+        window.addEventListener('load', function() {
+            const loader = document.querySelector('.loader-container');
+            loader.classList.add('fade-out');
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 500);
+        });
+
+        // 返回顶部按钮
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html> 

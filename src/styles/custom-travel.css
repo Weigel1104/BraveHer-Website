@@ -1,0 +1,677 @@
+/* 定制旅行页面样式 */
+.custom-travel-hero {
+    background: linear-gradient(rgba(255,105,180,0.1), rgba(255,105,180,0.2)),
+                url('https://source.unsplash.com/random/1920x1080/?travel');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}
+
+.custom-travel-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.custom-travel-hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* 旅行规划步骤 */
+.travel-planner {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.planner-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.step {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* 目的地网格 */
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    align-items: stretch;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+
+.destination-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+.destination-card .img-container {
+    height: 150px;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.destination-card h4 {
+    padding: 1rem;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.safety-rating {
+    display: block;
+    padding: 0 1rem 1rem;
+    color: #4CAF50;
+    font-size: 0.9rem;
+}
+
+/* 旅行风格选项 */
+.style-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.style-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.style-card:hover {
+    transform: translateY(-5px);
+}
+
+.style-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* 套餐定制器 */
+.package-customizer {
+    margin-top: 2rem;
+}
+
+.custom-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.option-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.option-group label {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.option-group select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+/* 价格计算器 */
+.price-calculator {
+    margin-top: 3rem;
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.price-breakdown {
+    margin-top: 1.5rem;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.price-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.request-quote-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+}
+
+.request-quote-btn:hover {
+    background: var(--accent-color);
+}
+
+/* 特色套餐 */
+.featured-packages {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    align-items: stretch;
+    padding: 0 1rem;
+}
+
+.package-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-card .img-container {
+    height: 160px;
+}
+
+.package-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.package-content {
+    padding: 2rem;
+}
+
+.package-features {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.package-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.package-features i {
+    color: #4CAF50;
+}
+
+.package-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.view-details-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-details-btn:hover {
+    background: var(--accent-color);
+}
+
+/* 用户评价 */
+.testimonials {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.testimonial-content {
+    position: relative;
+}
+
+.testimonial-content i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    margin-bottom: 1rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+}
+
+.testimonial-author h4 {
+    margin: 0;
+    color: var(--text-color);
+}
+
+.testimonial-author p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* 目的地展示 */
+.destinations-showcase {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    align-items: stretch;
+    padding: 0 1rem;
+}
+
+.destination-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.destination-item:hover {
+    transform: translateY(-5px);
+}
+
+.destination-item .img-container {
+    height: 180px;
+}
+
+.destination-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.destination-info {
+    padding: 2rem;
+}
+
+.destination-info h3 {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.destination-info p {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.destination-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.destination-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.explore-btn {
+    width: 100%;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* 热门路线 */
+.popular-routes {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.routes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.route-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.route-card:hover {
+    transform: translateY(-5px);
+}
+
+.route-header {
+    margin-bottom: 1.5rem;
+}
+
+.route-tag {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.route-header h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.route-duration {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.route-map {
+    margin-bottom: 1.5rem;
+}
+
+.route-stops {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    color: #666;
+}
+
+.route-highlights {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.route-highlights li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    margin-bottom: 0.8rem;
+}
+
+.route-highlights i {
+    color: #4CAF50;
+}
+
+.route-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.view-route-btn {
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-route-btn:hover {
+    background: var(--accent-color);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .custom-travel-hero {
+        height: 40vh;
+    }
+
+    .custom-travel-hero h1 {
+        font-size: 2rem;
+    }
+
+    .step-number {
+        position: static;
+        margin: 0 auto 1rem;
+    }
+
+    .custom-options {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-meta {
+        flex-direction: column;
+    }
+
+    .route-price {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .view-route-btn {
+        width: 100%;
+    }
+
+    .destination-card .img-container {
+        height: 140px;
+    }
+    
+    .package-card .img-container {
+        height: 150px;
+    }
+    
+    .destination-item .img-container {
+        height: 160px;
+    }
+
+    .destination-grid,
+    .package-grid,
+    .destinations-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .destination-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .package-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .destination-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .package-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 图片加载动画 */
+.destination-card img,
+.package-card img,
+.destination-item img {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* 图片容器全局样式 */
+.img-container {
+    position: relative;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* 图片悬停效果 */
+.destination-card:hover img,
+.package-card:hover img,
+.destination-item:hover img {
+    transform: scale(1.05);
+} 

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveler Community - BraveHer</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/community.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .community-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1200x800/?women,group,travel') no-repeat center center/cover;
+        }
+        .community-card img, .event-card img, .forum-post img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .member-avatar img, .post-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo"><a href="index.html"><i class="fas fa-compass"></i> BraveHer</a></div>
+            <ul class="nav-menu">
+                <li><a href="custom-travel.html"><i class="fas fa-map-marked-alt"></i> Custom Travel</a></li>
+                <li><a href="safety.html"><i class="fas fa-shield-alt"></i> Safety Services</a></li>
+                <li><a href="travel-buddy.html"><i class="fas fa-user-friends"></i> Travel Buddy</a></li>
+                <li><a href="local-guide.html"><i class="fas fa-map"></i> Local Guide</a></li>
+                <li><a href="community.html" class="active"><i class="fas fa-comments"></i> Community</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="community-hero">
+            <div class="hero-content">
+                <h1>Join Our Travel Community</h1>
+                <p>Connect, share experiences, and inspire fellow female travelers around the world</p>
+            </div>
+        </section>
+
+        <section class="community-stats">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <span class="stat-number">15k+</span>
+                    <span class="stat-label">Members</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-globe-americas"></i>
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-book-open"></i>
+                    <span class="stat-number">5k+</span>
+                    <span class="stat-label">Stories Shared</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-handshake"></i>
+                    <span class="stat-number">2k+</span>
+                    <span class="stat-label">Meetups</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="community-feed">
+            <div class="feed-container">
+                <div class="feed-header">
+                    <h2>Community Feed</h2>
+                    <div class="feed-filters">
+                        <button class="filter-btn active">All</button>
+                        <button class="filter-btn">Stories</button>
+                        <button class="filter-btn">Tips</button>
+                        <button class="filter-btn">Questions</button>
+                        <button class="filter-btn">Meetups</button>
+                    </div>
+                    <button class="share-story-btn">
+                        <i class="fas fa-pen"></i> Share Your Story
+                    </button>
+                </div>
+
+                <div class="posts-grid">
+                    <div class="post-card">
+                        <div class="post-header">
+                            <div class="post-author">
+                                <img src="https://source.unsplash.com/random/50x50/?woman" alt="Sarah">
+                                <div>
+                                    <h4>Sarah Johnson</h4>
+                                    <p>2 hours ago · Story</p>
+                                </div>
+                            </div>
+                            <button class="post-menu"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                        <div class="post-content">
+                            <h3>Solo Adventure in Iceland</h3>
+                            <p>Just returned from an incredible week chasing the Northern Lights across Iceland. Here's what I learned about solo travel in the Land of Fire and Ice...</p>
+                            <div class="post-images">
+                                <img src="https://source.unsplash.com/random/800x600/?iceland" alt="Iceland">
+                            </div>
+                            <div class="post-tags">
+                                <span>#SoloTravel</span>
+                                <span>#Iceland</span>
+                                <span>#NorthernLights</span>
+                            </div>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn like-btn">
+                                <i class="fas fa-heart"></i>
+                                <span>245</span>
+                            </button>
+                            <button class="action-btn comment-btn">
+                                <i class="fas fa-comment"></i>
+                                <span>42</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>18</span>
+                            </button>
+                            <button class="action-btn save-btn">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="post-card">
+                        <div class="post-header">
+                            <div class="post-author">
+                                <img src="https://source.unsplash.com/random/50x50/?woman-2" alt="Emily">
+                                <div>
+                                    <h4>Emily Chen</h4>
+                                    <p>5 hours ago · Tips</p>
+                                </div>
+                            </div>
+                            <button class="post-menu"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                        <div class="post-content">
+                            <h3>Essential Safety Tips for Tokyo</h3>
+                            <p>After living in Tokyo for 3 years, here are my top safety tips for female travelers visiting Japan's bustling capital...</p>
+                            <div class="post-images">
+                                <img src="https://source.unsplash.com/random/800x600/?tokyo" alt="Tokyo">
+                            </div>
+                            <div class="post-tags">
+                                <span>#Tokyo</span>
+                                <span>#SafetyTips</span>
+                                <span>#JapanTravel</span>
+                            </div>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn like-btn">
+                                <i class="fas fa-heart"></i>
+                                <span>189</span>
+                            </button>
+                            <button class="action-btn comment-btn">
+                                <i class="fas fa-comment"></i>
+                                <span>35</span>
+                            </button>
+                            <button class="action-btn share-btn">
+                                <i class="fas fa-share"></i>
+                                <span>12</span>
+                            </button>
+                            <button class="action-btn save-btn">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="community-groups">
+            <h2>Join Interest Groups</h2>
+            <div class="groups-grid">
+                <div class="group-card">
+                    <div class="group-image">
+                        <img src="https://source.unsplash.com/random/400x300/?adventure" alt="Adventure Seekers">
+                    </div>
+                    <div class="group-content">
+                        <h3>Adventure Seekers</h3>
+                        <p>Connect with fellow thrill-seekers and plan your next adventure together</p>
+                        <div class="group-stats">
+                            <span><i class="fas fa-users"></i> 2.5k members</span>
+                            <span><i class="fas fa-comments"></i> Active</span>
+                        </div>
+                        <button class="join-group-btn">Join Group</button>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <div class="group-image">
+                        <img src="https://source.unsplash.com/random/400x300/?photography" alt="Travel Photography">
+                    </div>
+                    <div class="group-content">
+                        <h3>Travel Photography</h3>
+                        <p>Share your best shots and get tips from fellow photographers</p>
+                        <div class="group-stats">
+                            <span><i class="fas fa-users"></i> 1.8k members</span>
+                            <span><i class="fas fa-comments"></i> Very Active</span>
+                        </div>
+                        <button class="join-group-btn">Join Group</button>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <div class="group-image">
+                        <img src="https://source.unsplash.com/random/400x300/?food" alt="Food Explorers">
+                    </div>
+                    <div class="group-content">
+                        <h3>Food Explorers</h3>
+                        <p>Discover local cuisines and share your culinary adventures</p>
+                        <div class="group-stats">
+                            <span><i class="fas fa-users"></i> 3.2k members</span>
+                            <span><i class="fas fa-comments"></i> Very Active</span>
+                        </div>
+                        <button class="join-group-btn">Join Group</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="upcoming-events">
+            <h2>Upcoming Community Events</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date">15</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Photography Workshop in Paris</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                        <p class="event-time"><i class="fas fa-clock"></i> 10:00 AM - 2:00 PM</p>
+                        <p class="event-description">Join us for a photography workshop led by professional photographer Marie Laurent. Perfect for all skill levels!</p>
+                        <div class="event-attendance">
+                            <div class="attendees">
+                                <img src="https://source.unsplash.com/random/30x30/?woman" alt="Attendee">
+                                <img src="https://source.unsplash.com/random/30x30/?woman-2" alt="Attendee">
+                                <img src="https://source.unsplash.com/random/30x30/?woman-3" alt="Attendee">
+                                <span>+12 going</span>
+                            </div>
+                            <button class="attend-btn">Attend</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="date">22</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Tokyo Food Tour Meetup</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Tokyo, Japan</p>
+                        <p class="event-time"><i class="fas fa-clock"></i> 6:00 PM - 9:00 PM</p>
+                        <p class="event-description">Explore Tokyo's vibrant food scene with local guide Yuki. Experience the best of Japanese cuisine!</p>
+                        <div class="event-attendance">
+                            <div class="attendees">
+                                <img src="https://source.unsplash.com/random/30x30/?woman-4" alt="Attendee">
+                                <img src="https://source.unsplash.com/random/30x30/?woman-5" alt="Attendee">
+                                <img src="https://source.unsplash.com/random/30x30/?woman-6" alt="Attendee">
+                                <span>+8 going</span>
+                            </div>
+                            <button class="attend-btn">Attend</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="join-community">
+            <div class="join-content">
+                <h2>Ready to Join Our Community?</h2>
+                <p>Connect with fellow travelers, share your experiences, and plan your next adventure together</p>
+                <button class="join-now-btn">
+                    Join Now <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-compass"></i> BraveHer</h4>
+                <p>Empowering women to explore the world safely and confidently</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="custom-travel.html">Custom Travel</a></li>
+                    <li><a href="safety.html">Safety Resources</a></li>
+                    <li><a href="travel-buddy.html">Find a Travel Buddy</a></li>
+                    <li><a href="local-guide.html">Local Female Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <p>Emergency Contact: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BraveHer - Making Travel Better for Women</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html> 

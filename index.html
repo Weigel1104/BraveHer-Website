@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BraveHer - Women's Travel Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e2e6ea 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .logo {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #ff6b6b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            color: #666;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #ff6b6b;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(255,107,107,0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255,107,107,0.4);
+        }
+        
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #ff6b6b;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin: 20px auto;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .redirect-text {
+            font-size: 14px;
+            color: #999;
+            margin-top: 20px;
+        }
+        
+        .features {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .feature {
+            margin: 0 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .feature i {
+            font-size: 24px;
+            color: #ff6b6b;
+            margin-bottom: 8px;
+        }
+        
+        .feature span {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+    <script>
+        // Redirect after 3 seconds
+        setTimeout(function() {
+            window.location.href = "src/index.html";
+        }, 3000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-compass"></i> BraveHer
+        </div>
+        <h1>Women's Travel Platform</h1>
+        <p>Safe, comfortable, and personalized travel services for independent women</p>
+        
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-map-marked-alt"></i>
+                <span>Custom Travel</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <span>Safety Services</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <span>Travel Buddies</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-map"></i>
+                <span>Local Guides</span>
+            </div>
+        </div>
+        
+        <div class="loader"></div>
+        <p class="redirect-text">Loading amazing content, please wait...</p>
+        <a href="src/index.html" class="btn">Enter Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Buddies - BraveHer</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/travel-buddy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .buddy-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1200x800/?women,friends,travel') no-repeat center center/cover;
+        }
+        .buddy-card img, .story-img img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .testimonial-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo"><a href="index.html"><i class="fas fa-compass"></i> BraveHer</a></div>
+            <ul class="nav-menu">
+                <li><a href="custom-travel.html"><i class="fas fa-map-marked-alt"></i> Custom Travel</a></li>
+                <li><a href="safety.html"><i class="fas fa-shield-alt"></i> Safety Services</a></li>
+                <li><a href="travel-buddy.html" class="active"><i class="fas fa-user-friends"></i> Travel Buddy</a></li>
+                <li><a href="local-guide.html"><i class="fas fa-map"></i> Local Guide</a></li>
+                <li><a href="community.html"><i class="fas fa-comments"></i> Community</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="buddy-hero">
+            <div class="hero-content">
+                <h1>Find Your Perfect Travel Companion</h1>
+                <p>Connect with like-minded female travelers and explore the world together</p>
+            </div>
+        </section>
+
+        <section class="buddy-search-section">
+            <div class="search-container">
+                <h2>Search Travel Buddies</h2>
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label>Destination</label>
+                        <select>
+                            <option>All Destinations</option>
+                            <option>Europe</option>
+                            <option>Asia</option>
+                            <option>Americas</option>
+                            <option>Africa</option>
+                            <option>Oceania</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Travel Dates</label>
+                        <select>
+                            <option>Any Time</option>
+                            <option>Next Month</option>
+                            <option>Next 3 Months</option>
+                            <option>Next 6 Months</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Travel Style</label>
+                        <select>
+                            <option>All Styles</option>
+                            <option>Adventure</option>
+                            <option>Cultural</option>
+                            <option>Relaxation</option>
+                            <option>Photography</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Age Range</label>
+                        <select>
+                            <option>All Ages</option>
+                            <option>18-25</option>
+                            <option>26-35</option>
+                            <option>36-45</option>
+                            <option>46+</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="search-btn">
+                    <i class="fas fa-search"></i> Find Buddies
+                </button>
+            </div>
+        </section>
+
+        <section class="featured-buddies">
+            <h2>Featured Travel Buddies</h2>
+            <div class="buddies-grid">
+                <div class="buddy-card">
+                    <div class="buddy-header">
+                        <div class="buddy-avatar">
+                            <img src="https://source.unsplash.com/random/150x150/?woman" alt="Sarah">
+                            <span class="status-badge online"></span>
+                        </div>
+                        <div class="buddy-info">
+                            <h3>Sarah Johnson</h3>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> London, UK</p>
+                            <div class="verification">
+                                <span><i class="fas fa-check-circle"></i> Verified</span>
+                                <span><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel-plan">
+                        <h4>Travel Plans</h4>
+                        <p><i class="fas fa-plane"></i> Backpacking across Europe</p>
+                        <p><i class="fas fa-calendar-alt"></i> June - August 2024</p>
+                    </div>
+                    <div class="interests">
+                        <span>Photography</span>
+                        <span>Culture</span>
+                        <span>Food</span>
+                        <span>Art</span>
+                    </div>
+                    <div class="buddy-actions">
+                        <button class="connect-btn">Connect</button>
+                        <button class="message-btn"><i class="fas fa-comment"></i></button>
+                        <button class="save-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+
+                <div class="buddy-card">
+                    <div class="buddy-header">
+                        <div class="buddy-avatar">
+                            <img src="https://source.unsplash.com/random/150x150/?woman-2" alt="Emily">
+                            <span class="status-badge offline"></span>
+                        </div>
+                        <div class="buddy-info">
+                            <h3>Emily Chen</h3>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Toronto, Canada</p>
+                            <div class="verification">
+                                <span><i class="fas fa-check-circle"></i> Verified</span>
+                                <span><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel-plan">
+                        <h4>Travel Plans</h4>
+                        <p><i class="fas fa-plane"></i> Southeast Asia Food Tour</p>
+                        <p><i class="fas fa-calendar-alt"></i> July 2024</p>
+                    </div>
+                    <div class="interests">
+                        <span>Food</span>
+                        <span>Cooking</span>
+                        <span>Markets</span>
+                        <span>Local Life</span>
+                    </div>
+                    <div class="buddy-actions">
+                        <button class="connect-btn">Connect</button>
+                        <button class="message-btn"><i class="fas fa-comment"></i></button>
+                        <button class="save-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+
+                <div class="buddy-card">
+                    <div class="buddy-header">
+                        <div class="buddy-avatar">
+                            <img src="https://source.unsplash.com/random/150x150/?woman-3" alt="Maria">
+                            <span class="status-badge online"></span>
+                        </div>
+                        <div class="buddy-info">
+                            <h3>Maria Garcia</h3>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Barcelona, Spain</p>
+                            <div class="verification">
+                                <span><i class="fas fa-check-circle"></i> Verified</span>
+                                <span><i class="fas fa-star"></i> 4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel-plan">
+                        <h4>Travel Plans</h4>
+                        <p><i class="fas fa-plane"></i> South America Adventure</p>
+                        <p><i class="fas fa-calendar-alt"></i> September 2024</p>
+                    </div>
+                    <div class="interests">
+                        <span>Hiking</span>
+                        <span>Nature</span>
+                        <span>Adventure</span>
+                        <span>Wildlife</span>
+                    </div>
+                    <div class="buddy-actions">
+                        <button class="connect-btn">Connect</button>
+                        <button class="message-btn"><i class="fas fa-comment"></i></button>
+                        <button class="save-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="buddy-tips">
+            <h2>Travel Buddy Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Safety First</h3>
+                    <p>Always verify profiles and meet in public places for the first time. Use our built-in safety features.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Clear Communication</h3>
+                    <p>Discuss travel expectations, budgets, and preferences before committing to travel together.</p>
+                </div>
+                <div class="tip-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Be Open-minded</h3>
+                    <p>Embrace different perspectives and cultures. The best travel companions often have diverse backgrounds.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="success-stories">
+            <h2>Success Stories</h2>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="https://source.unsplash.com/random/400x300/?travel-friends" alt="Success Story">
+                    </div>
+                    <div class="story-content">
+                        <h3>"Found a lifelong friend"</h3>
+                        <p>"We met through BraveHer and explored Japan together. What started as a travel partnership turned into a wonderful friendship."</p>
+                        <div class="story-author">
+                            <img src="https://source.unsplash.com/random/50x50/?woman" alt="Lisa">
+                            <div>
+                                <h4>Lisa & Kate</h4>
+                                <p>Met in 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="https://source.unsplash.com/random/400x300/?friends-travel" alt="Success Story">
+                    </div>
+                    <div class="story-content">
+                        <h3>"Perfect travel match"</h3>
+                        <p>"Our shared love for photography and adventure made our Iceland trip unforgettable. We're already planning our next journey!"</p>
+                        <div class="story-author">
+                            <img src="https://source.unsplash.com/random/50x50/?woman-2" alt="Anna">
+                            <div>
+                                <h4>Anna & Sophie</h4>
+                                <p>Met in 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="create-profile-cta">
+            <div class="cta-content">
+                <h2>Ready to Find Your Travel Buddy?</h2>
+                <p>Create your profile and start connecting with fellow travelers today!</p>
+                <button class="create-profile-btn">
+                    Create Your Profile <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-compass"></i> BraveHer</h4>
+                <p>Empowering women to explore the world safely and confidently</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="custom-travel.html">Custom Travel</a></li>
+                    <li><a href="safety.html">Safety Resources</a></li>
+                    <li><a href="travel-buddy.html">Find a Travel Buddy</a></li>
+                    <li><a href="local-guide.html">Local Female Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <p>Emergency Contact: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BraveHer - Making Travel Better for Women</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html> 

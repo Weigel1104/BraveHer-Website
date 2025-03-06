@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Travel - BraveHer</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .custom-travel-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1200x800/?travel,mountains') no-repeat center center/cover;
+        }
+        .destination-card img, .package-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .destination-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo"><a href="index.html"><i class="fas fa-compass"></i> BraveHer</a></div>
+            <ul class="nav-menu">
+                <li><a href="custom-travel.html" class="active"><i class="fas fa-map-marked-alt"></i> Custom Travel</a></li>
+                <li><a href="safety.html"><i class="fas fa-shield-alt"></i> Safety</a></li>
+                <li><a href="travel-buddy.html"><i class="fas fa-users"></i> Travel Buddy</a></li>
+                <li><a href="local-guide.html"><i class="fas fa-female"></i> Local Guide</a></li>
+                <li><a href="community.html"><i class="fas fa-comments"></i> Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="custom-travel-hero">
+            <div class="hero-content">
+                <h1>Create Your Dream Journey</h1>
+                <p>Personalized travel experiences designed exclusively for women travelers</p>
+            </div>
+        </section>
+
+        <section class="travel-planner">
+            <h2>Plan Your Perfect Trip</h2>
+            <div class="planner-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Choose Your Destination</h3>
+                    <p>Select from our curated list of women-friendly destinations worldwide</p>
+                    <div class="destination-grid">
+                        <div class="destination-card">
+                            <img src="https://source.unsplash.com/random/400x300/?japan" alt="Japan">
+                            <h4>Japan</h4>
+                            <span class="safety-rating">Safety Rating: 9.5/10</span>
+                        </div>
+                        <div class="destination-card">
+                            <img src="https://source.unsplash.com/random/400x300/?iceland" alt="Iceland">
+                            <h4>Iceland</h4>
+                            <span class="safety-rating">Safety Rating: 9.8/10</span>
+                        </div>
+                        <div class="destination-card">
+                            <img src="https://source.unsplash.com/random/400x300/?newzealand" alt="New Zealand">
+                            <h4>New Zealand</h4>
+                            <span class="safety-rating">Safety Rating: 9.6/10</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Select Your Travel Style</h3>
+                    <p>Choose the type of experience that matches your interests</p>
+                    <div class="style-options">
+                        <div class="style-card">
+                            <i class="fas fa-mountain"></i>
+                            <h4>Adventure</h4>
+                            <p>Hiking, camping, and outdoor activities</p>
+                        </div>
+                        <div class="style-card">
+                            <i class="fas fa-palette"></i>
+                            <h4>Cultural</h4>
+                            <p>Art, history, and local traditions</p>
+                        </div>
+                        <div class="style-card">
+                            <i class="fas fa-spa"></i>
+                            <h4>Wellness</h4>
+                            <p>Spa, yoga, and relaxation</p>
+                        </div>
+                        <div class="style-card">
+                            <i class="fas fa-utensils"></i>
+                            <h4>Culinary</h4>
+                            <p>Food tours and cooking classes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Customize Your Package</h3>
+                    <div class="package-customizer">
+                        <div class="custom-options">
+                            <div class="option-group">
+                                <label>Duration</label>
+                                <select>
+                                    <option>3-5 days</option>
+                                    <option>6-10 days</option>
+                                    <option>11-15 days</option>
+                                    <option>15+ days</option>
+                                </select>
+                            </div>
+                            <div class="option-group">
+                                <label>Accommodation Type</label>
+                                <select>
+                                    <option>Luxury Hotels</option>
+                                    <option>Boutique Hotels</option>
+                                    <option>Local Homestays</option>
+                                    <option>Female-only Hostels</option>
+                                </select>
+                            </div>
+                            <div class="option-group">
+                                <label>Group Size</label>
+                                <select>
+                                    <option>Solo</option>
+                                    <option>Small Group (2-4)</option>
+                                    <option>Medium Group (5-8)</option>
+                                    <option>Large Group (9-12)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="price-calculator">
+                <h3>Estimated Price Calculator</h3>
+                <div class="calculator-form">
+                    <div class="price-breakdown">
+                        <div class="price-item">
+                            <span>Base Package</span>
+                            <span>$1,500</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Activities</span>
+                            <span>$500</span>
+                        </div>
+                        <div class="price-item">
+                            <span>Safety Services</span>
+                            <span>$200</span>
+                        </div>
+                        <div class="price-total">
+                            <span>Total Estimated Price</span>
+                            <span>$2,200</span>
+                        </div>
+                    </div>
+                    <button class="request-quote-btn">Request Detailed Quote</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-packages">
+            <h2>Popular Custom Packages</h2>
+            <div class="package-grid">
+                <div class="package-card">
+                    <img src="https://source.unsplash.com/random/400x300/?japan,temple" alt="Japan Cultural Immersion">
+                    <div class="package-content">
+                        <h3>Japan Cultural Immersion</h3>
+                        <p>10 days of traditional experiences in Kyoto and Tokyo</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Tea ceremony workshops</li>
+                            <li><i class="fas fa-check"></i> Temple stays</li>
+                            <li><i class="fas fa-check"></i> Cooking classes</li>
+                            <li><i class="fas fa-check"></i> Female guide throughout</li>
+                        </ul>
+                        <div class="package-price">From $3,200</div>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <img src="https://source.unsplash.com/random/400x300/?bali,yoga" alt="Bali Wellness Retreat">
+                    <div class="package-content">
+                        <h3>Bali Wellness Retreat</h3>
+                        <p>7 days of rejuvenation in tropical paradise</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Daily yoga sessions</li>
+                            <li><i class="fas fa-check"></i> Spa treatments</li>
+                            <li><i class="fas fa-check"></i> Meditation workshops</li>
+                            <li><i class="fas fa-check"></i> Healthy cooking classes</li>
+                        </ul>
+                        <div class="package-price">From $2,500</div>
+                        <button class="view-details-btn">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Travelers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"The custom travel service exceeded my expectations. Every detail was perfectly planned with safety and comfort in mind."</p>
+                        <div class="testimonial-author">
+                            <img src="https://source.unsplash.com/random/60x60/?woman" alt="Jessica">
+                            <div>
+                                <h4>Jessica R.</h4>
+                                <p>Solo traveler to Japan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"As a first-time solo traveler, I felt completely safe and supported throughout my journey. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://source.unsplash.com/random/60x60/?woman,2" alt="Lisa and Amy">
+                            <div>
+                                <h4>Lisa & Amy</h4>
+                                <p>Friends trip to Iceland</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="destinations-showcase">
+            <h2>Popular Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination-item">
+                    <img src="https://source.unsplash.com/random/400x300/?tokyo,night" alt="Japan Tokyo Night - Modern Urban Charm">
+                    <div class="destination-info">
+                        <h3>Japan</h3>
+                        <p>Experience the perfect blend of tradition and modernity</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Best Time: Spring/Fall</span>
+                            <span><i class="fas fa-clock"></i> Ideal Duration: 10-14 days</span>
+                        </div>
+                        <button class="explore-btn">Explore Japan <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <img src="https://source.unsplash.com/random/400x300/?iceland,northern" alt="Iceland Northern Lights - Natural Wonder">
+                    <div class="destination-info">
+                        <h3>Iceland</h3>
+                        <p>Discover the land of fire and ice</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Best Time: Summer</span>
+                            <span><i class="fas fa-clock"></i> Ideal Duration: 7-10 days</span>
+                        </div>
+                        <button class="explore-btn">Explore Iceland <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="destination-item">
+                    <img src="https://source.unsplash.com/random/400x300/?bali,beach" alt="Bali Beach Sunset - Tropical Paradise">
+                    <div class="destination-info">
+                        <h3>Bali</h3>
+                        <p>Find your peace in this tropical paradise</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Best Time: Apr-Oct</span>
+                            <span><i class="fas fa-clock"></i> Ideal Duration: 5-7 days</span>
+                        </div>
+                        <button class="explore-btn">Explore Bali <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-routes">
+            <h2>Trending Routes</h2>
+            <div class="routes-grid">
+                <div class="route-card">
+                    <div class="route-header">
+                        <span class="route-tag">Most Popular</span>
+                        <h3>Japan Golden Route</h3>
+                        <p class="route-duration">12 Days</p>
+                    </div>
+                    <div class="route-content">
+                        <div class="route-map">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <div class="route-stops">
+                                <span>Tokyo</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span>Kyoto</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span>Osaka</span>
+                            </div>
+                        </div>
+                        <ul class="route-highlights">
+                            <li><i class="fas fa-check"></i> Cherry blossom viewing</li>
+                            <li><i class="fas fa-check"></i> Traditional tea ceremony</li>
+                            <li><i class="fas fa-check"></i> Mt. Fuji day trip</li>
+                            <li><i class="fas fa-check"></i> Bullet train experience</li>
+                        </ul>
+                        <div class="route-price">
+                            <span class="price">From $2,999</span>
+                            <button class="view-route-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="route-card">
+                    <div class="route-header">
+                        <span class="route-tag">Adventure</span>
+                        <h3>Iceland Ring Road</h3>
+                        <p class="route-duration">10 Days</p>
+                    </div>
+                    <div class="route-content">
+                        <div class="route-map">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <div class="route-stops">
+                                <span>Reykjavik</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span>Vik</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span>Akureyri</span>
+                            </div>
+                        </div>
+                        <ul class="route-highlights">
+                            <li><i class="fas fa-check"></i> Northern Lights viewing</li>
+                            <li><i class="fas fa-check"></i> Blue Lagoon spa</li>
+                            <li><i class="fas fa-check"></i> Glacier hiking</li>
+                            <li><i class="fas fa-check"></i> Whale watching</li>
+                        </ul>
+                        <div class="route-price">
+                            <span class="price">From $3,499</span>
+                            <button class="view-route-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4><i class="fas fa-compass"></i> BraveHer</h4>
+                <p>Empowering women to explore the world safely and confidently</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="safety.html">Safety Services</a></li>
+                    <li><a href="travel-buddy.html">Find Buddies</a></li>
+                    <li><a href="local-guide.html">Local Guides</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BraveHer - Making Travel Better for Women</p>
+        </div>
+    </footer>
+</body>
+</html> 
